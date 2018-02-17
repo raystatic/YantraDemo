@@ -33,25 +33,38 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <devs.mulham.horizontalcalendar.HorizontalCalendarView
-                android:id="@+id/calendarView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#fff"
-                app:sizeBottomText="12dp"
-                app:sizeMiddleText="12dp"
-                app:sizeTopText="12dp"
-                app:textColorSelected="@color/MyRed"
-                app:textColorNormal="#000"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:id="@+id/calendarView">
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<devs.mulham.horizontalcalendar.HorizontalCalendarView-->
+                <!--android:id="@+id/calendarView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="#fff"-->
+                <!--app:sizeBottomText="12dp"-->
+                <!--app:sizeMiddleText="12dp"-->
+                <!--app:sizeTopText="12dp"-->
+                <!--app:textColorSelected="@color/MyRed"-->
+                <!--app:textColorNormal="#000"/>-->
+
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="3dp"
                 android:id="@+id/view_tab4"
-                android:layout_below="@+id/calendarView"
                 android:background="@color/MyRed"/>
             <ImageView
                 android:layout_width="35dp"
@@ -61,6 +74,16 @@
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/date_selecter"/>
 
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerview_tab4_events"/>
         </RelativeLayout>
 
 
